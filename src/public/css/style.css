@@ -1,126 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-h2{
-    color: rgb(0, 0, 0);
-    text-align: center;
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
 
-    margin-bottom: 30px;
-    font-size: 40px;
-}
-.logo{
-    width: 100px;
-    border-radius: 50%;
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 70px;
-  }
-
-
-  .cards {
-    border: 1px solid #ccc;
-    text-align: center;
-    font-family:monospace;
-    border-radius: 5px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .productImage {
-    max-width: 100%;
-    height: 200px;
-    width: 200px;
-  }
-
-
-  .cardTitle {
-    font-size: 30px;
-    margin-top: 10px;
-    font-weight: 600;
-  }
-
-  .cardDescription {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-
-  .cardPrice {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #007bff; 
-    margin-top: 5px;
-  }
-
-
-  .cardStock {
-    font-size: 14px;
-    margin-top: 5px;
-    color: gray;
+.logo {
+  width: 100px;
+  border-radius: 50%;
 }
-  button {
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 70px;
+}
+
+
+.cards {
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: monospace;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  max-width: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+
+.cardTitle {
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.cardDescription {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.cardPrice {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+
+.cardStock {
+  font-size: 14px;
+  margin-top: 5px;
+  color: gray;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 footer {
-    margin-top: 50px;
-    margin-bottom: 0;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+ /*chat*/
+ 
+#formularioAgregarProducto {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#formularioAgregarProducto {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80%;
-    height: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#formularioAgregarProducto input[type="text"],
+#formularioAgregarProducto input[type="number"] {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
-  
-  #formularioAgregarProducto input[type="text"],
-  #formularioAgregarProducto input[type="number"] {
-    width: 40%;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  #formularioAgregarProducto button[type="submit"] {
-    background-color: #393a3b;
-    color: white;
-    border: none;
-    margin: 20px auto;
-    padding: 10px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #formularioAgregarProducto button[type="submit"]:hover {
-    background-color: #050000;
-  }
-  
+
+#formularioAgregarProducto button[type="submit"] {
+  background-color: #393a3b;
+  color: white;
+  border: none;
+  margin: 20px auto;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#formularioAgregarProducto button[type="submit"]:hover {
+  background-color: #000500;
+}
+
+.contacto {
+  background-image: url('https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmlkZW9qdWVnb3N8ZW58MHx8MHx8fDA%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+
+.chats {
+  background-color: #000000c9;
+  border-radius: 20px;
+  max-height: 500px;
+  padding: 40px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+
+.contactanos {
+  background-color: rgba(255, 255, 255, 0.637);
+  color: black;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+.message {
+  color: rgb(252, 252, 252);
+  border: 1px solid rgb(19, 221, 232);
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.ChatMessage {
+  color: #ccc;
+  font-size: 35px;
+  text-align: center;
+}
+
+.user {
+  font-size: 15px;
+  font-weight: 500;
+  color: #adabab;
+}
+
+.text {
+  font-size: 28px;
+}
+
+.correo,
+.mensaje {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #050000;
+}
+
+.inputCorreo {
+  width: 60%;
+}
+
+.inputMensaje {
+  width: 60%;
+  height: 150px;
+}

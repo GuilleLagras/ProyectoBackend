@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             code: codeInput.value,
             stock: parseInt(stockInput.value),
             thumbnails: thumbnailsInput.value,
+
         };
 
         // Agregar producto
@@ -60,11 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('cards');
 
-            card.innerHTML = `<img src="${product.thumbnails}" alt="Imagen del producto" class="productImage">
+            card.innerHTML = `
+      <img src="${product.thumbnails}" alt="Imagen del producto" class="productImage">
         <h3 class="cardTitle"> ${product.title}</h3>
         <p class="cardDescription"> - Descripción: ${product.description}</p>
         <h4 class="cardPrice">  $${product.price}</h4>
-        <button data-product-id="${product.id}" onclick="deleteProduct(${product.id})">Eliminar✖️</button>`;
+        <button data-product-id="${product.id}" onclick="deleteProduct(${product.id})">Eliminar✖️</button>
+      `;
 
             container.appendChild(card);
         });
